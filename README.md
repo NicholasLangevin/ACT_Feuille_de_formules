@@ -1,4 +1,4 @@
-# Actuariat Cheat sheet
+# Actuarial Cheat sheet
 Cheat sheet that I created during my Bachelor's degree in Actuarial Science
 
 ### Contents
