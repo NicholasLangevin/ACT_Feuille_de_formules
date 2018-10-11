@@ -1,0 +1,176 @@
+% Notes de cours pour ACT-2005
+% Automne 2018
+\documentclass[12pt, french]{report}
+
+% Lien vers un template de préambule
+\input{preambule/preambule_utf8.tex}
+
+\usepackage{picture}
+\newenvironment{nospaceflalign*}
+ {\setlength{\abovedisplayskip}{-5pt}\setlength{\belowdisplayskip}{0pt}%
+  \csname flalign*\endcsname}
+ {\csname endflalign*\endcsname\ignorespacesafterend}
+
+% Information sur le document
+\title{Mathématique Actuarielle Vie I \\
+ACT-2004 \\
+Feuille de formules}
+\author{Nicholas Langevin}
+
+
+% -----------------------------------
+% --- DÉBUT DU DOCUMENT ---
+\begin{document}
+
+% Page titre
+\maketitle
+
+% % Table des matières
+% \tableofcontents
+
+% --- DÉBUT DE LA RÉDACTION ---
+% Créer un environement "myequation" qui aligne les équations à gauche
+% \def\myequation{\stepcounter{equation}\(\displaystyle }
+% \def\endmyequation{\hfill \hbox{\enspace(\theequation)}\)}
+
+%Page de background
+\thispagestyle{empty}
+\AddToShipoutPictureBG*{\includegraphics[width=\paperwidth,height=\paperheight]{photos/background.jpg}}
+\clearpage
+
+
+\begin{tikzpicture}[remember picture,overlay]
+    \node[xshift=10.8cm,yshift=-1cm] at (current page.north west){%
+         \LARGE {\color{white} \textbf{Mathématique Actuarielle Vie I}} \\    
+    };
+    \node[xshift=10.8cm,yshift=-1.8cm] at (current page.north west){%
+         \LARGE {\color{white} \textbf{ACT-2004}} \\    
+    };
+    \node[xshift=10.8cm,yshift=-2.6cm] at (current page.north west){%
+         \LARGE {\color{white} \textbf{Feuille de formules}} \\    
+    };
+\end{tikzpicture}
+
+\tcbset{title=Distributions de survie,
+        colframe=green_dis_survie,
+        sharp corners}
+\begin{tikzpicture}[remember picture,overlay]
+\node[xshift=5.5cm,yshift=-9.8cm] at (current page.north west){%
+    \begin{minipage}{0,49\textwidth}
+        \begin{tcolorbox}       
+            \begin{nospaceflalign*}
+                    &X: \text{L'âge au décès d'un nouveau-né.}& \\
+                    &T_x: \text{Durée de vie résiduelle d'un individu d'âge x.}& \\
+                    &T_x = (X - x |X \ge x )& \\ 
+                    &\textbf{Fonction de densité}& \\ 
+                    &f_{t_x}(x) = \actsymb[t]{p}{x} \cdot \mu_{x+t}& \\ 
+                    &\textbf{Fonction de répartition}& \\ 
+                    &\actsymb[t]{q}{x} = F_{t_x}(t) = \frac{S_x(x) - S_x(x + t)}{S_x(x)}& \\ 
+                    &\actsymb[t|u]{q}{x} = Pr(t \leq t_x \leq t = u) = \actsymb[t+u]{q}{x} - \actsymb[t]{q}{x} = \actsymb[t]{p}{x} \cdot \actsymb[u]{q}{x + t}& \\ 
+                    &\textbf{Fonction de survie}& \\ 
+                    &\actsymb[t]{p}{x} = S_{t_x}(x) = \frac{S_x(x + t)}{S_x(x)} = \exp\left\{-\int_0^t \mu_{x+s} ds\right\}& \\ 
+                    &\textbf{Force de mortalité}& \\ 
+                    &\mu_x = \lim_{t \to 0} \frac{\actsymb[t]{q}{x}}{t} = -\frac{d}{dx} ln(S_x(x))& \\
+                    &\mu_{x+t} = -\frac{d}{dx} ln(\actsymb[t]{p}{x})&
+            \end{nospaceflalign*}
+        \end{tcolorbox}  
+    \end{minipage} };
+\end{tikzpicture}
+
+
+\tcbset{title=Table de mortalité,
+        colframe=orange_table_mortalite,
+        sharp corners}
+\begin{tikzpicture}[remember picture,overlay]
+\node[xshift=5.5cm,yshift=-21cm] at (current page.north west){%
+    \begin{minipage}{0,49\textwidth}
+        \begin{tcolorbox}       
+            \begin{nospaceflalign*}
+                &\lx{0}: \text{Nombre initial d'individus dans la cohorte.}& \\
+                &I_j(x): \text{Indicateur de survie du $j^e$ individus jusqu'a l'âge x.}& \\
+                &\Lx{x}: \text{v.a du nombre de survivant jusqu'a l'âge x.}& \\
+                &\Dx[n]{x} : \text{Nombres de décès entre l'âge $x$ et $x+n$}& \\
+                &\Lx{x} = \sum_{j = 1}^{\lx{0}} I_j(x) \; \text{où $I_j(x) \sim$ Bin$(1, S_x(x))$}& \\
+                &\lx{x} = E[\Lx{x}] = \sum_{j = 1}^{\lx{0}} S_x(x)& \\
+                &\Dx[n]{x}  = \Lx{x} - \mathcal{L}(x + n)&  
+            \end{nospaceflalign*}
+            \tcblower 
+            \begin{nospaceflalign*}
+                &\actsymb[t]{q}{x} = \frac{\lx{x} - \lx{x+t}}{\lx{x}}& \\ 
+                &\actsymb[t]{p}{x} = \frac{\lx{x+t}}{\lx{x}}& \\
+                &\actsymb[t|u]{q}{x} = \frac{\actsymb[u]{d}{x+t}}{\lx{x}}&
+            \end{nospaceflalign*}
+        \end{tcolorbox}  
+    \end{minipage} };
+\end{tikzpicture}
+
+\begin{tikzpicture}[remember picture,overlay]
+    \node[xshift=10.5cm,yshift=-21.6cm] at (current page.north west){%
+    \begin{minipage}{0,5\textwidth}
+        \begin{nospaceflalign*}
+            &\actsymb[n]{d}{x}   = \int_0^n \lx{x+t} \cdot \mu_{x+t} dx \\ 
+            &\dx[n]{x}  = E[\Dx[n]{x}] = \lx{x} - \lx{x+n}& 
+        \end{nospaceflalign*}    
+    \end{minipage}
+    };
+\end{tikzpicture}
+
+
+\tcbset{title=Hypothèse d'interpolation,
+        colframe=bleu_hyp_interpolation,
+        sharp corners}
+\begin{tikzpicture}[remember picture,overlay]
+\node[xshift=16.1cm,yshift=-10.22cm] at (current page.north west){%
+    \begin{minipage}{0,49\textwidth}
+        \begin{tcolorbox}       
+            \begin{nospaceflalign*}
+                    &\textbf{DUD: Distribution uniforme des décès}& \\
+                    &\lx{x+t} = (1 - t) \cdot \lx{x} + t \cdot l_{x+1}& \\
+                    &\textbf{FC: Hypothèse de force constante}& \\
+                    &\lx{x+t} = \lx{x}^{(1-t)} \cdot l_{x+1}^{(t)}& \\
+                    &\textbf{BAL: Hypothèse de Balducci}& \\
+                    &\lx{x+t} = \frac{\lx{x} \cdot l_{x+1}}{(1-t) \cdot l_{x+1} + t \cdot \lx{x}}& \\ 
+                    &\textbf{Formules utiles:}& \\
+                    &1)\: x \in \mathbb{N}& \\
+                    &2)\: t \in ]0, 1[& \\
+                    &3)\: x < x + t < x + 1& \\ 
+                    &\begin{array}{|l|c|c|c|} 
+                        \hline
+                        & DUD & FC & BAL \\
+                        \hline 
+                        \actsymb[t]{q}{x} & t \cdot q_x                 & 1 - p_x^{t}          & 1 - \frac{p_x}{1 - (1-t)q_x} \\
+                        \hline
+                        \actsymb[t]{p}{x} & 1 - t \cdot q_x             & p_x^{t}              & \frac{p_x}{1 - (1-t)q_x} \\
+                        \hline
+                        \dx[1]{x}         & t \cdot \dx[n]{x}           & \lx{x} (1 - p_x^{t}) & \lx{x} \left( 1 - \frac{p_x}{1 - (1-t)q_x} \right) \\
+                        \hline
+                        f_{t_x}(t)        & q_x                         & -p_x^t ln(p_x)       & \frac{p_x}{(1 - (1-t)q_x)^2} \\
+                        \hline
+                        \mu_{x+t}         & \frac{q_x}{1 - t \cdot q_x} & -ln(p_x)             & \frac{q_x}{1 - (1-t)q_x} \\
+                        \hline
+                    \end{array}&
+            \end{nospaceflalign*}
+        \end{tcolorbox}  
+    \end{minipage} };
+\end{tikzpicture}
+
+
+\tcbset{title=Espérance de vie résiduel,
+        colframe=rouge_esp_residuel,
+        sharp corners}
+\begin{tikzpicture}[remember picture,overlay]
+\node[xshift=16.1cm,yshift=-18.65cm] at (current page.north west){%
+    \begin{minipage}{0,49\textwidth}
+        \begin{tcolorbox}       
+            \begin{nospaceflalign*}
+                &\eringx{x} = E[t_x] \int_0^{\omega - x} t \cdot \actsymb[t]{p}{x} \cdot \mu_{x+t} \:dt = \int_0^{\omega - x} \actsymb[t]{p}{x} \:dt& \\
+                &\eringx{x:\angln} = \left( \int_0^{n} t \cdot \actsymb[t]{p}{x} \cdot \mu_{x+t} \:dt \right) + n \actsymb[n]{p}{x}  = \int_0^{n} \actsymb[t]{p}{x} \:dt& \\
+                &\textbf{Durée de vie résiduel entière}& \\
+                &Pr(k_x = k) = Pr(\lfloor t_x \rfloor = k) = \actsymb[k|]{q}{x}& 
+            \end{nospaceflalign*}
+        \end{tcolorbox}  
+    \end{minipage} };
+\end{tikzpicture}
+
+
+\end{document}
