@@ -1,4 +1,4 @@
-# ACT_feuille_de_formules
+# Actuariat Cheat sheet
 Cheat sheet that I created during my Bachelor's degree in Actuarial Science
 
 ### Contents
