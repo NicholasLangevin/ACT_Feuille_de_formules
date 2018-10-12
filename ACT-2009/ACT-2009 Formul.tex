@@ -85,10 +85,10 @@ Un état i est dit être \textbf{ergodique} s’il est à la fois apériodique(d
 Si la chaîne de markov est \textbf{irréductible} et \textbf{ergodique}, alors $p^n$ converge vers une matrice dont chaque ligne est l'unique distribution stationnaire $\pi$ 
 \begin{itemize}
   \item $\lim\limits_{x \to \infty} p_{ij}^{(n)} = \pi_j < \infty \:,\forall j \in \mathbb{N}$ 
-  \item $\pi_j = \sum\limits_{i=0}^\infty \pi_i p_{ii} \:,\forall j \in \mathbb{N}$
+  \item $\pi_j = \sum\limits_{i=0}^\infty \pi_i p_{ij} \:,\forall j \in \mathbb{N}$
   \item $\sum\limits_{j=0}^\infty \pi_j = 1$ et $\pi_j$ sont uniques
   \item Sois $\mu_{ii}$, le temps moyen pris par le processuss pour passer de l'état i à l'état i, alors
-  \[ \pi_i = \frac{1}{\mu_{ii}} \]
+  \[ \pi_i = \frac{1}{\mu_{ii}} \quad, \mu_{ii} = \sum_{n=1}^\infty n f_{ii}^{(n)} \]
 \end{itemize}
 
 \subsubsection*{Proportion de temps}
@@ -96,6 +96,7 @@ Soit $r_i$ la proportion de temps où le processus dans l'état i, alors
 \[ r_j = \sum_{i=0}^w r_i p_{ii}\:,j=0,1,2,...,w\: \textbf{et} \sum_{i=0}^w r_i = 1 \]
 où w est le nombre d'état du processus de Markov \\
 \textbf{Note:} Il faut alors trouver l'unique solution du système d'équation linéaire.
+
 
 \subsection*{Application}
 
