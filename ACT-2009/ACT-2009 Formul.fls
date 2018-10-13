@@ -1,8 +1,8 @@
-PWD /Users/nicholaslangevin/Dropbox/Feuille de formul/Processus stochastique
+PWD /Users/nicholaslangevin/Repertoire git/ACT_Feuille_de_formules/ACT-2009
 INPUT /usr/local/texlive/2017/texmf.cnf
 INPUT /usr/local/texlive/2017/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/nicholaslangevin/Dropbox/Feuille de formul/Processus stochastique/ACT-2009 Formul.tex
+INPUT /Users/nicholaslangevin/Repertoire git/ACT_Feuille_de_formules/ACT-2009/ACT-2009 Formul.tex
 OUTPUT ACT-2009 Formul.log
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/article.cls

@@ -84,11 +84,12 @@ Un état i est dit être \textbf{ergodique} s’il est à la fois apériodique(d
 \subsubsection*{Théorème des probabilité stationnaire}
 Si la chaîne de markov est \textbf{irréductible} et \textbf{ergodique}, alors $p^n$ converge vers une matrice dont chaque ligne est l'unique distribution stationnaire $\pi$ 
 \begin{itemize}
-  \item $\lim\limits_{x \to \infty} p_{ij}^{(n)} = \pi_j < \infty \:,\forall j \in \mathbb{N}$ 
+  \item $\lim\limits_{n \to \infty} p_{ij}^{(n)} = \pi_j < \infty \:,\forall j \in \mathbb{N}$ 
   \item $\pi_j = \sum\limits_{i=0}^\infty \pi_i p_{ii} \:,\forall j \in \mathbb{N}$
   \item $\sum\limits_{j=0}^\infty \pi_j = 1$ et $\pi_j$ sont uniques
-  \item Sois $\mu_{ii}$, le temps moyen pris par le processuss pour passer de l'état i à l'état i, alors
-  \[ \pi_i = \frac{1}{\mu_{ii}} \]
+  \item $p(x_{n} = \pi_j) = \pi_j \:, \forall n,j \in \{0,1,2,... \}$
+  \item Sois $\mu_{ii}$, le temps moyen(E[n]) pris par le processuss pour passer de l'état i à l'état i, alors
+  \[ \pi_i = \frac{1}{\mu_{ii}} \:,\mu_{ii} = \sum_{n=1}^\infty n f_{ii}^{(n)} \]
 \end{itemize}
 
 \subsubsection*{Proportion de temps}
@@ -103,8 +104,42 @@ où w est le nombre d'état du processus de Markov \\
 \[ p_{ij} = \sum_{k:c(i,k)} p(K = k) \] 
 où $k \sim$ loi de probabilité 
 
+\subsubsection*{Processus de branchement}
+\[ p(x_{k+1}|x_1 = i) = p(x_k = j)^i = (\pi_j)^i \]
 
 
+\subsubsection*{Étude de crédit}
 
+\[ f_{ij} = \sum_{k=0}^w p_{ik} f_{kj} = \sum_{n=1}^\infty f_{ij}^{(n)} \]
+\[ \sum_{n=1}^\infty p_{ii}^{(n)} = \frac{f_{ii}}{1 - f_{ii}} \]
+
+\section*{Chapitre 3}
+\subsection*{Processus de dénombrement}
+\subsubsection*{Definition I}
+Une processus de dénombrement $\{ N(t);t \geq 0 \}$ est dit être un processus de Poisson avec taux $\lambda > 0$ si:
+\begin{enumerate}
+  \item N(0) = 0
+  \item Le processus a des accroissements indépendant, i.e. pour $0 \leq t_1 \leq t_2 \leq t_3$ les accroissements $[N(t_3) - N(t_2)]$ et $[N(t_2) - N(t_1)]$ 
+        sont stochastique indépendant.
+  \item Le nombre d'événement d'un interval de n'importe qu'elle interval suit une Poisson($\lambda t$)
+        \[ p([N(t-s) - N(s)] = n) = \frac{(\lambda t)^n}{n!} e^{-\lambda t} \]
+\end{enumerate}
+
+\subsubsection*{Definition II}
+\begin{enumerate}
+  \item $N(0) = 0$
+  \item Le processus a des accroissements indépendant et stationnaire
+  \item $p(N(h) = 1) = \lambda h + o(h)$
+  \item $p(N(h) \geq 2) = o(h)$ \\ \\ avec $\lim\limits_{h \to 0} \frac{o(h)}{h} = 0 $
+\end{enumerate}
+
+\subsection*{Propriétés}
+\begin{itemize}
+  \item Sois $T_i$ le temps entre le $i^e - 1$ événement et le $i^e$ événement
+        \[ T_1, T_2, ... ,T_i  \sim \text{exp}(\lambda)\: \text{et sont i.i.d} \]
+  \item Sois $S_n$ le moment où se produit le $n^e$ événement
+        \[ S_n = \sum_{i=1}^n T_i \sim \text{gamma}(n, \lambda) \]
+  \item $N(t) \geq n \Leftrightarrow S_n \leq t \Rightarrow  p(S_n \leq t) = p(N(t) \geq n) = \sum\limits_{i = n}^\infty \frac{(\lambda t )}{i!} e^{-\lambda t} $
+\end{itemize}
 
 \end{document}
