@@ -1,15 +1,15 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  13 OCT 2018 16:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.10.31)  15 OCT 2018 09:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/nicholaslangevin/Repertoire git/ACT_Feuille_de_formules/ACT-2009/ACT-2009 Formul.tex"
-(/Users/nicholaslangevin/Repertoire git/ACT_Feuille_de_formules/ACT-2009/ACT-2009 Formul.tex
+**"a:/Users/Nicholas/Documents/Répertoire GIT/ACT_Feuille_de_formules/ACT-2009/ACT-2009 Formul.tex"
+(a:/Users/Nicholas/Documents/Répertoire GIT/ACT_Feuille_de_formules/ACT-2009/ACT-2009 Formul.tex
 LaTeX2e <2017-04-15>
-Babel <3.10> and hyphenation patterns for 84 language(s) loaded.
-(/usr/local/texlive/2017/texmf-dist/tex/latex/base/article.cls
+Babel <3.14> and hyphenation patterns for 84 language(s) loaded.
+(d:/texlive/2017/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2017/texmf-dist/tex/latex/base/size10.clo
+(d:/texlive/2017/texmf-dist/tex/latex/base/size10.clo
 File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -23,21 +23,21 @@ File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-) (/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2016/11/05 v2.16a AMS math features
+) (d:/texlive/2017/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2017/09/02 v2.17a AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
-(/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amstext.sty
+(d:/texlive/2017/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
- (/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsgen.sty
+ (d:/texlive/2017/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks14
 \ex@=\dimen103
-)) (/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsbsy.sty
+)) (d:/texlive/2017/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen104
-) (/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsopn.sty
+) (d:/texlive/2017/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count87
@@ -77,17 +77,17 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 \mathdisplay@stack=\toks18
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
-) (/usr/local/texlive/2017/texmf-dist/tex/latex/base/inputenc.sty
+) (d:/texlive/2017/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@prehook=\toks19
 \inpenc@posthook=\toks20
- (/usr/local/texlive/2017/texmf-dist/tex/latex/base/utf8.def
+ (d:/texlive/2017/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
- (/usr/local/texlive/2017/texmf-dist/tex/latex/base/t1enc.dfu
+ (d:/texlive/2017/texmf-dist/tex/latex/base/t1enc.dfu
 File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
@@ -327,7 +327,7 @@ File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
 )
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
- (/usr/local/texlive/2017/texmf-dist/tex/latex/base/ot1enc.dfu
+ (d:/texlive/2017/texmf-dist/tex/latex/base/ot1enc.dfu
 File: ot1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
@@ -367,7 +367,7 @@ File: ot1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
 )
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
- (/usr/local/texlive/2017/texmf-dist/tex/latex/base/omsenc.dfu
+ (d:/texlive/2017/texmf-dist/tex/latex/base/omsenc.dfu
 File: omsenc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
@@ -390,17 +390,17 @@ Now handling font encoding U ...
    defining Unicode char U+2026 (decimal 8230)
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
-)) (/usr/local/texlive/2017/texmf-dist/tex/latex/geometry/geometry.sty
+)) (d:/texlive/2017/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
- (/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/keyval.sty
+ (d:/texlive/2017/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks21
-) (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+) (d:/texlive/2017/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
-) (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+) (d:/texlive/2017/texmf-dist/tex/generic/oberdiek/ifvtex.sty
 Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
-) (/usr/local/texlive/2017/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+) (d:/texlive/2017/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count99
@@ -415,19 +415,19 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layouthoffset=\dimen118
 \Gm@layoutvoffset=\dimen119
 \Gm@dimlist=\toks22
-) (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/amssymb.sty
+) (d:/texlive/2017/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
- (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+ (d:/texlive/2017/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (/usr/local/texlive/2017/texmf-dist/tex/latex/textpos/textpos.sty
+)) (d:/texlive/2017/texmf-dist/tex/latex/textpos/textpos.sty
 Package: textpos 2016/06/07 v1.8
 
 Package: textpos 2016/06/07 1.8, absolute positioning of text on the page
-(/usr/local/texlive/2017/texmf-dist/tex/latex/ms/everyshi.sty
+(d:/texlive/2017/texmf-dist/tex/latex/ms/everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 )
 \TP@textbox=\box28
@@ -503,40 +503,40 @@ LaTeX Font Info:    ... okay on input line 12.
 
 ABD: EveryShipout initializing macros
 LaTeX Font Info:    Try loading font information for U+msa on input line 16.
- (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
+ (d:/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 16.
- (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
+ (d:/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 55.
- (/usr/local/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
+ (d:/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 55.
  [1
 
-{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
-Underfull \hbox (badness 10000) in paragraph at lines 134--135
+{d:/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
+Underfull \hbox (badness 10000) in paragraph at lines 129--130
 
  []
 
-[3] [4] (./ACT-2009 Formul.aux) ) 
+[3] (./ACT-2009 Formul.aux) ) 
 Here is how much of TeX's memory you used:
- 2080 strings out of 492995
- 25220 string characters out of 6132704
- 92098 words of memory out of 5000000
- 5622 multiletter control sequences out of 15000+600000
- 12122 words of font info for 47 fonts, out of 8000000 for 9000
+ 2076 strings out of 492990
+ 24753 string characters out of 6136348
+ 91165 words of memory out of 5000000
+ 5625 multiletter control sequences out of 15000+600000
+ 11503 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 27i,6n,26p,312b,197s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "ACT-2009 Formul.pdf" (4 pages, 146686 bytes).
+ 27i,6n,26p,316b,197s stack positions out of 5000i,500n,10000p,200000b,80000s
+<d:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><d:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><d:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><d:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><d:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><d:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><d:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><d:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><d:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><d:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on "ACT-2009 Formul.pdf" (3 pages, 145055 bytes).
 PDF statistics:
- 69 PDF objects out of 1000 (max. 8388607)
- 49 compressed objects within 1 object stream
+ 66 PDF objects out of 1000 (max. 8388607)
+ 47 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
